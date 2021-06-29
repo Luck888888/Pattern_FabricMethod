@@ -1,0 +1,16 @@
+{
+    "name": "tatsiana/fabric",
+    "description": "Factory Method for get json, csv files",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tatsiana Tania",
+            "email": "t-tanja@bk.ru"
+        }
+    ],
+    "require": {}
+}
