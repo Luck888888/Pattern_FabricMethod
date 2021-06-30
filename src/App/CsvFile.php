@@ -5,9 +5,8 @@ class CsvFile implements IData
 {
     public function formatData($header = true)
     {
-        //Преобразование csv-файла(удаление запятых, строки с запятыми)
+        //Преобразование csv-файла(удаление пустых строк)
         $lines = file(__DIR__ . '/to_upload.csv', FILE_SKIP_EMPTY_LINES );
-        $num_rows = count($lines);
         foreach ($lines as $lineNo => $line) {
             $csv = str_getcsv($line);
             if (count(array_filter($csv)) == 0) {
